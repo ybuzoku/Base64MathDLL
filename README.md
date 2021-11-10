@@ -15,10 +15,10 @@ The alphabet is: 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz@
  	large enough to safely store the sum or difference of two numbers. I recommend a 9 char buffer for addition and subtraction.
  - All numbers are little endian and must be read and written as such.
 
-C prototypes for the functions in the DLL:
+C prototypes for the functions exposed by the DLL are:
 
-	 int add64A(char* firstNumberPtrASCIIEncoded, char* secondNumberPtrASCIIEncoded, char* returnBufferPtr, int lengthOfReturnBuffer);
+	 int add64(char* firstNumberPtrASCIIEncoded, char* secondNumberPtrASCIIEncoded, char* returnBufferPtr, int lengthOfReturnBuffer);
 	 
-	 int sub64A(char*, char*, char*, int);
+	 int sub64(char*, char*, char*, int);
    
 For examples of interfacing this DLL with MSVC/C++ and C#, please see my repositories B64DllTestClient (MSVC/C++) and Base64PInvokeTest (C#).
