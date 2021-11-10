@@ -1,6 +1,7 @@
 # Base64MathDLL
 The source code for the Win64 Base64Math Library written in x86-64 Assembly. 
-Hardware Requirements: 
+
+Current Hardware/Software Requirements: 
 - 64-bit Windows
 - x86-64 CPU
 
