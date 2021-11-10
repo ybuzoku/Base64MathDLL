@@ -22,3 +22,5 @@ C prototypes for the functions exposed by the DLL are:
 	 int sub64(char*, char*, char*, int);
    
 For examples of interfacing this DLL with MSVC/C++ and C#, please see my repositories B64DllTestClient (MSVC/C++) and Base64PInvokeTest (C#).
+
+Note, as of writing this, I was unable to directly expose the assmebly function procedures add64A and sub64A, instead wrapping them in C functions add64 and sub64. This will be subject to change, but the function names will remain the same.
